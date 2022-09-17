@@ -1,0 +1,208 @@
+<html>
+
+<head>
+    <title>form1</title>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+        
+        li {
+            float: left;
+        }
+        
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+        
+        .active {
+            background-color: #4caf50;
+        }
+    </style>
+</head>
+
+<body bgcolor="#b0e0e6">
+    <ul>
+        <li>
+            <a href="index.html">Home </a>
+        </li>
+
+        <li>
+            <a href="internet.html">Internet </a>
+        </li>
+        <li>
+            <a href="ethics.html">Ethics </a>
+        </li>
+        <li>
+            <a href="egov.html"> E-gov</a>
+        </li>
+        <li>
+            <a class="active" href="form1.html">Form</a>
+        </li>
+    </ul>
+    <h1>
+        <center>
+            <font color="#e6b6b0" size="30">FORM</font>
+        </center>
+    </h1>
+    <table width="1350" height="137" border="1">
+        <tbody>
+            <tr>
+                <td width="174" height="131" bgcolor="green">
+                    <marquee behavior="alternate">
+                        <img src="images/1.jpg" width="300" height="200">
+                        <img src="images/2.jpg" width="300" height="200">
+                        <img src="images/3.jpg" width="300" height="200">
+                        <img src="images/4.jpg" width="300" height="200">
+                        <img src="images/5.jpg" width="300" height="200">
+                        <img src="images/6.jpg" width="300" height="200">
+                        <img src="images/7.jpg" width="300" height="200">
+                        <img src="images/8.jpg" width="300" height="200">
+                        <img src="images/9.jpg" width="300" height="200">
+                    </marquee>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <form>
+        <table align="center" border="2">
+            <tbody>
+                <tr bgcolor="#ffffff">
+                    <th>Label</th>
+                    <th>Particulars</th>
+                </tr>
+                <tr>
+                    <td bgcolor="cc155a">First Name</td>
+                    <td>
+                        <input type="text" name="name" maxlength="20" placeholder="your name">
+                    </td>
+                </tr>
+                <tr>
+                    <td bgcolor="cc155a">Last Name</td>
+                    <td>
+                        <input type="text" name="name" maxlength="20" placeholder="your last name">
+                    </td>
+                </tr>
+                <tr>
+                    <td bgcolor="cc155a">Password</td>
+                    <td>
+                        <input type="password" maxlength="10" placeholder="Password" id="myInput">
+                        <br>
+                        <input type="checkbox" onclick="myFunction()"> "show password"
+                        <script>
+                            function myFunction() {
+                                var x = document.getElementById("myInput");
+                                if (x.type === "password") {
+                                    x.type = "text";
+                                } else {
+                                    x.type = "password";
+                                }
+
+                            }
+                        </script>
+                    </td>
+                </tr>
+                <tr>
+                    <td bgcolor="#cc155a">Gender</td>
+                    <td>
+                        <input type="radio" name="gender" value="Male" checked> "Male"
+                        <br>
+                        <input type="radio" name="gender" value="Female"> "Female"
+                        <br>
+                        <input type="radio" name="gender" value="other"> "other"
+                    </td>
+                </tr>
+                <tr>
+                    <td bgcolor="#cc155a">choose</td>
+                    <td>
+                        <input type="checkbox" name="ch" value="iphone"> "iphone"
+                        <input type="checkbox" name="ch" value="Samsung"> "Samsung"
+                        <input type="checkbox" name="ch" value="Mi"> "Mi"
+                        <input type="checkbox" name="ch" value="Lava"> "Lava"
+
+                    </td>
+                </tr>
+                <tr>
+                    <td bgcolor="#cc155a">Attach file</td>
+                    <td>
+                        <input type="file" name="file">
+                    </td>
+                </tr>
+                <tr>
+                    <td bgcolor="#cc155a">Comment</td>
+
+                    <td>
+                        <textarea rows="10" cols="100" placeholder="Comment"></textarea>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td bgcolor="#cc155a"> DOB</td>
+                    <td>
+                        <input type="Date" name="bdate">
+                    </td>
+                </tr>
+                <tr>
+                    <td bgcolor="#cc155a"> your fav color</td>
+                    <td>
+                        <input type="color" name="fav color" value="red">
+                    </td>
+
+                </tr>
+                <tr>
+                    <td bgcolor="#cc155a">Days</td>
+                    <td>
+                        <select name="days">
+                                <option>Sunday</option>
+                                <option>Monday</option>
+                                <option>Tuesday</option>
+                                <option>Wednesday</option>
+                                <option>Thursday</option>
+                                <option>Friday</option>
+                                <option>Saturday></option>
+                            </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button type="button" onclick="alert('ThankYou!')">send</button>
+                    </td>
+                </tr>
+            </tbody>
+
+        </table>
+    </form>
+    <table width="1350" height="98" border="1">
+        <tbody>
+            <tr>
+                <td width="174" height="92" bgcolor="tomato">
+                    <center>
+                        <font size="5" color="white" face="sans serif">
+                            Hello World ☎ 98xxxxxxxx E-mail: xyz@gmail.com
+                            <font size="5" color="orange" face="areial black"></font>
+
+                        </font>
+                    </center>
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
+</body>
+
+</html>
